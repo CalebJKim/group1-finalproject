@@ -1,5 +1,6 @@
 // database name = foods
 
+const { resolveSoa } = require('dns');
 const { application } = require('express'); // i definitely did not type this so i think it somehow added but ima keep for now in case its necessary
 const express = require('express');
 const app = express();
@@ -26,6 +27,10 @@ const foodSchema = Schema({
         type: String, 
         required: true
     }, 
+    time: {
+        type: String, 
+        required: true
+    }, 
     foodItem: {
         type: String, 
         required: true
@@ -39,26 +44,30 @@ const FOOD = mongoose.model('foods', foodSchema);
 
 app.get("/all", (req, res) => {
     // fill in get request for all foods
-    // not gonna be used in the app but it seems useful for future testing
+    // not gonna be used in the app but very useful for future testing
     FOOD.find().then((food) => {
         res.json(food)
-        // res.json({foods: food})
     })
-    // res.json({foods: foodSchema})
 })
 
 app.get("/dining-halls", (req, res) => {
     // should return all the dining halls in existence
     FOOD.find().then((food) => {
-        res.json(food.diningHall)
+        res.json(foodSchema.diningHall)
     })
-    res.json(foodSchema.diningHall)
+})
+
+app.get("/dining-hall-menu", (req, res) => { // works as intended (so far doesn't confuse with other menus)
+    FOOD.find({ diningHall: req.body.diningHall }).then((food) => {
+        res.json(food)
+    })
 })
 
 app.post("/add", (req, res) => {
     const food = new FOOD({
         diningHall: req.body.diningHall,
         category: req.body.category,
+        time: req.body.time,
         foodItem: req.body.foodItem
     })
     food.save((error, document) => {
@@ -68,6 +77,7 @@ app.post("/add", (req, res) => {
         else {
             res.json({  diningHall: req.body.diningHall,
                 category: req.body.category,
+                time: req.body.time, 
                 foodItem: req.body.foodItem
             })
         }
@@ -100,6 +110,7 @@ app.delete("/remove/all", (req, res) => {
     // likely useful when day changes
     FOOD.deleteMany({ }).then(function(){
         console.log("Cleared");
+        res.end()
     }).catch(function(error){
         console.log(error);
     });
