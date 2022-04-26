@@ -53,15 +53,31 @@ app.get("/all", (req, res) => {
 app.get("/dining-halls", (req, res) => {
     // should return all the dining halls in existence
     FOOD.find().then((food) => {
-        res.json(foodSchema.diningHall)
+        res.json(foodSchema)
     })
-})
+});
 
 app.get("/dining-hall-menu", (req, res) => { // works as intended (so far doesn't confuse with other menus)
-    FOOD.find({ diningHall: req.body.diningHall }).then((food) => {
-        res.json(food)
+    
+    FOOD.find({ diningHall: req.body.diningHall}).then((food) => {
+        var foods = []
+        for (let i = 0; i < food.length; i++) {
+            foods.push(food[i].foodItem);
+        }
+        res.json(foods)
     })
-})
+});
+
+app.get("/dining-hall-menu-time", (req, res) => { // works as intended (so far doesn't confuse with other menus)
+    
+    FOOD.find({ diningHall: req.body.diningHall, time: req.body.time}).then((food) => {
+        var foods = []
+        for (let i = 0; i < food.length; i++) {
+            foods.push(food[i].foodItem);
+        }
+        res.json(foods)
+    })
+});
 
 app.post("/add", (req, res) => {
     const food = new FOOD({

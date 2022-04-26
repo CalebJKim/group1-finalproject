@@ -16,7 +16,8 @@ router.post(
     check("email", "Please enter a valid email").isEmail(),
     check("password", "Please enter a valid password").isLength({
       min: 6
-    })
+    }),
+    check("email", "Please enter a valid email").matches(/(@berkeley.edu)$/)
   ],
   async (req, res) => {
     const errors = validationResult(req);
