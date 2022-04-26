@@ -1,7 +1,15 @@
+import './User.css';
+
 function User() {
     return (
-        <div>
-            <h1>SIGN IN</h1>
+        <div className="container">
+            <div className="header">Cal Dining</div>
+            <button>
+                <div>SIGN IN</div>
+            </button>
+            <button>
+                <div>SIGN UP</div>
+            </button>
         </div>
     )
 }
