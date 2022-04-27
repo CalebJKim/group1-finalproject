@@ -1,0 +1,102 @@
+body {
+    background-color: #3B7EA1;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #003262;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 5% 5% 5% 5%;
+    margin: 10% 10% 10% 10%;
+    border-radius: 75px;
+    height: 300px;
+}
+
+.header {
+    font-weight: 900;
+    color: #FDB515;
+    font-size: 60px;
+}
+
+.captionback {
+    background-color: #3B7EA1;
+    border-radius: 5px;
+    height: 40px;
+    padding: 10px;
+}
+
+.cardcaption {
+    font-size: 30px;
+    color: #FDB515;
+}
+
+.subheader {
+    font-weight: 500;
+    color: #FDB515;
+    font-size: 60px;
+}
+
+.middleChunk{
+    display: flex;
+    background-color: #003262;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-top: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    border-radius: 100px;
+    
+}
+
+.card1{
+    background-image: url(https://i2.wp.com/www.dailycal.org/assets/uploads/2016/11/patz_mikaelaRaphael_staff.jpg?ssl=1&w=900);
+    background-size: cover;
+    display: flex;
+    justify-content: start;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    padding: 20px;
+    border: 6px solid #FDB515;
+    }
+
+.card2{
+    background-image: url(https://news.berkeley.edu/wp-content/uploads/2016/08/kosher-and-halal-cafe.jpg);
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    border: 6px solid #FDB515;
+    }
+    
+.card3 {
+    background-image: url(https://housing.berkeley.edu/wp-content/uploads/Clark-Kerr-Dining-Hall-750px-700x500.jpg);
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    border: 6px solid #FDB515;
+    }
+
+.card4 {
+    background-image: url(https://www.foothill.edu/facilityrentals/images/facilities_contact_400.jpg);
+    background-size: cover;
+    display: flex;
+    width: 250px;
+    height: 250px;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 20px;
+    border: 6px solid #FDB515;
+    }
+
