@@ -7,7 +7,7 @@ function Home() {
                 <div className="header">Welcome to Cal Dining!</div>
                 <div className="subheader">Where will you eat today?</div>
             </div>
-            <div className = "middleChunk">
+            <div className = "diningcards">
                 <a href="">
                     <div className = "card1">
                         <div className = "captionback">

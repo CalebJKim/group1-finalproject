@@ -39,7 +39,7 @@ body {
     font-size: 60px;
 }
 
-.middleChunk{
+.diningcards{
     display: flex;
     background-color: #003262;
     justify-content: space-evenly;
@@ -68,9 +68,9 @@ body {
     background-image: url(https://news.berkeley.edu/wp-content/uploads/2016/08/kosher-and-halal-cafe.jpg);
     background-size: cover;
     display: flex;
+    justify-content: start;
     width: 250px;
     height: 250px;
-    flex-direction: column;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
@@ -80,9 +80,9 @@ body {
     background-image: url(https://housing.berkeley.edu/wp-content/uploads/Clark-Kerr-Dining-Hall-750px-700x500.jpg);
     background-size: cover;
     display: flex;
+    justify-content: start;
     width: 250px;
     height: 250px;
-    flex-direction: column;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
@@ -92,9 +92,9 @@ body {
     background-image: url(https://www.foothill.edu/facilityrentals/images/facilities_contact_400.jpg);
     background-size: cover;
     display: flex;
+    justify-content: start;
     width: 250px;
     height: 250px;
-    flex-direction: column;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
