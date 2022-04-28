@@ -1,14 +1,15 @@
 import { Flex, Box, Spacer, Text, Grid, HStack, Badge } from '@chakra-ui/react';
-import React from 'react';
+import React, { useState } from 'react';
 import MenuItem from '../Components/MenuItem';
 import '../Routes/Menu.css';
 
 export default function Menu() {
+
     return (
         <div>
-        <h1 className='header1'>
-            Today's Menu
-        </h1>
+            <h1 className='header1'>
+                Today's Menu
+            </h1>
         <Box>
           <Flex className='Menu'>
             <Box className='Food' marginBottom={3} margin={1}>
@@ -21,7 +22,9 @@ export default function Menu() {
                 </Box>
                 </Flex>
                 </Box>
-                </div>
+        </div>
+
+        
     )
 
 }

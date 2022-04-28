@@ -26,5 +26,5 @@ function axiosGetMenuSpecific(location, time) { // should get specific menu
   return result
 }
 
-//axiosGetMenuSpecific("Cafe 3", "Breakfast")
+axiosGetMenuSpecific("Cafe 3", "Breakfast")
 //axiosGetMenuSpecific("Clark Kerr Campus", "Dinner")

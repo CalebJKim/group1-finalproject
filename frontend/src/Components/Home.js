@@ -10,15 +10,15 @@ function Home() {
             </div>
             <div className = "diningcards">
                     
-                        <div className = "card1">
-                            <Link to={"/crossroads"} style={{ textDecoration: 'none' }} >
-                            <div className = "captionback">
-                                <div className = "cardcaption">
-                                    Crossroads
-                                </div>
+                    <div className = "card1">
+                        <Link to={"/crossroads"} style={{ textDecoration: 'none' }} >
+                        <div className = "captionback">
+                            <div className = "cardcaption">
+                                Crossroads
                             </div>
-                            </Link>
                         </div>
+                        </Link>
+                    </div>
                     
                     <div className = "card2">
                         <Link to={"/cafe3"} style={{ textDecoration: 'none' }} >
@@ -29,6 +29,7 @@ function Home() {
                         </div>
                         </Link>
                     </div>
+
                     <div className = "card3">
                         <Link to={"/clarkkerr"} style={{ textDecoration: 'none' }} >
                         <div className = "captionback">
@@ -38,6 +39,7 @@ function Home() {
                         </div>
                         </Link>
                     </div>
+                    
                     <div className = "card4">
                         <Link to={"/foothill"} style={{ textDecoration: 'none' }} >
                         <div className = "captionback">
