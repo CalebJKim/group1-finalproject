@@ -12,7 +12,7 @@ body {
     padding: 5% 5% 5% 5%;
     margin: 10% 10% 10% 10%;
     border-radius: 75px;
-    height: 300px;
+    height: 150px;
 }
 
 .header {
@@ -22,7 +22,8 @@ body {
 }
 
 .captionback {
-    background-color: #3B7EA1;
+    background-color: rgb(246, 178, 43);
+    backdrop-filter: opacity(20%);
     border-radius: 5px;
     height: 40px;
     padding: 10px;
@@ -30,7 +31,8 @@ body {
 
 .cardcaption {
     font-size: 30px;
-    color: #FDB515;
+    color: #edf8e2;
+    font-weight: bold;
 }
 
 .subheader {
@@ -42,7 +44,7 @@ body {
 .diningcards{
     display: flex;
     background-color: #003262;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     padding-top: 50px;
     padding-left: 100px;
@@ -57,8 +59,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
@@ -69,8 +71,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
@@ -81,8 +83,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;
@@ -93,8 +95,8 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 180px;
+    height: 180px;
     border-radius: 20px;
     padding: 20px;
     border: 6px solid #FDB515;

@@ -8,7 +8,6 @@ function Home() {
                 <div className="subheader">Where will you eat today?</div>
             </div>
             <div className = "diningcards">
-                <a href="">
                     <div className = "card1">
                         <div className = "captionback">
                             <div className = "cardcaption">
@@ -16,8 +15,7 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </a>
-                <a href="">
+
                     <div className = "card2">
                         <div className = "captionback">
                             <div className = "cardcaption">
@@ -25,8 +23,6 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </a>
-                <a href="">
                     <div className = "card3">
                         <div className = "captionback">
                             <div className = "cardcaption">
@@ -34,8 +30,6 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </a>
-                <a href="">
                     <div className = "card4">
                         <div className = "captionback">
                             <div className = "cardcaption">
@@ -43,7 +37,6 @@ function Home() {
                             </div>
                         </div>
                     </div>
-                </a>
             </div>
         </div>
     )
