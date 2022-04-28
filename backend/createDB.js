@@ -6,8 +6,7 @@ const url = 'http://localhost:3000'
 function axiosPost(foodJson) {
     const promise = axios.post(url + '/add', foodJson)
     const result = promise.then((response) => {
-        // console.log(response.config);
-        // console.log('successfully posted')
+        console.log('successfully posted')
       }, (error) => {
         console.log(error);
       })
@@ -37,7 +36,6 @@ async function getMenu(location, time) { // location is an int, time must be 'Br
     let allFood = await getAllFood()
     let menu = JSON.parse(allFood)[location][time]
     timeSpecificMenu = []
-    console.log(menu)
     for (var key of Object.keys(menu)) {
         category = [key]
         for (let i = 0; i < menu[key].length; i++) {
@@ -45,7 +43,6 @@ async function getMenu(location, time) { // location is an int, time must be 'Br
         }
         timeSpecificMenu.push(category)
     }
-    //console.log(timeSpecificMenu)
     return timeSpecificMenu
 }
 
