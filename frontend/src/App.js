@@ -10,13 +10,16 @@ import Menu from './Routes/Menu';
 function App() {
   return (
     <div className='App'>
-  <ChakraProvider>
+  {/* <ChakraProvider>
     <Menu />
-  </ChakraProvider>
-  <Home />
+  </ChakraProvider> */}
     <Routes>
       <Route path='/' element={<User />} />
       <Route path='/home' element={<Home />} />
+      <Route path='/cafe3' element={<ChakraProvider> <Menu /> </ChakraProvider>} />
+      <Route path='/clarkkerr' element={<ChakraProvider> <Menu /> </ChakraProvider>} />
+      <Route path='/crossroads' element={<ChakraProvider> <Menu /> </ChakraProvider>} />
+      <Route path='/foothill' element={<ChakraProvider> <Menu /> </ChakraProvider>} />
     </Routes>
     </div>
   );
