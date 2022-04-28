@@ -5,13 +5,14 @@ import User from "./Components/User";
 import Home from "./Components/Home";
 import MenuItem from './Components/MenuItem';
 import { ChakraProvider } from '@chakra-ui/react';
+import Menu from './Routes/Menu';
 
 function App() {
   return (
     <div className='App'>
-      {/* <ChakraProvider>
-    <MenuItem />
-  </ChakraProvider> */}
+      <ChakraProvider>
+    <Menu />
+  </ChakraProvider>
     <Routes>
       <Route path='/' element={<User />} />
       <Route path='/home' element={<Home />} />
