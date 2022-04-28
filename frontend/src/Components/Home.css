@@ -12,7 +12,7 @@ body {
     padding: 5% 5% 5% 5%;
     margin: 10% 10% 10% 10%;
     border-radius: 75px;
-    height: 300px;
+    height: 150px;
 }
 
 .header {
@@ -21,16 +21,28 @@ body {
     font-size: 60px;
 }
 
+.wholepage {
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
 .captionback {
-    background-color: #3B7EA1;
+    background-color: rgb(205, 176, 117);
+    backdrop-filter: opacity(70%);
+    display: flex;
+    align-items: center;
     border-radius: 5px;
-    height: 40px;
-    padding: 10px;
+    height: fit-content;
+    padding: 5px;
+    border: 6=3px solid #003262;
 }
 
 .cardcaption {
-    font-size: 30px;
-    color: #FDB515;
+    font-size: 20px;
+    color: #edf8e2;
+    font-weight: bold;
 }
 
 .subheader {
@@ -42,7 +54,7 @@ body {
 .diningcards{
     display: flex;
     background-color: #003262;
-    justify-content: space-evenly;
+    justify-content: space-between;
     flex-direction: row;
     padding-top: 50px;
     padding-left: 100px;
@@ -57,11 +69,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 
 .card2{
@@ -69,11 +81,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
     
 .card3 {
@@ -81,11 +93,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 
 .card4 {
@@ -93,10 +105,10 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 250px;
-    height: 250px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 

@@ -10,9 +10,9 @@ import Menu from './Routes/Menu';
 function App() {
   return (
     <div className='App'>
-      <ChakraProvider>
+      {/* <ChakraProvider>
     <Menu />
-  </ChakraProvider>
+  </ChakraProvider> */}
     <Routes>
       <Route path='/' element={<User />} />
       <Route path='/home' element={<Home />} />
