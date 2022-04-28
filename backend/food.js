@@ -36,7 +36,7 @@ const foodSchema = Schema({
         required: true
     }, 
     rating: {
-        type: Number
+        type: Array
     }
 })
 
@@ -49,13 +49,6 @@ app.get("/all", (req, res) => {
         res.json(food)
     })
 })
-
-app.get("/dining-halls", (req, res) => {
-    // should return all the dining halls in existence
-    FOOD.find().then((food) => {
-        res.json(foodSchema)
-    })
-});
 
 app.get("/dining-hall-menu", (req, res) => { // works as intended (so far doesn't confuse with other menus)
     
