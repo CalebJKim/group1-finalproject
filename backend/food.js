@@ -36,7 +36,7 @@ const foodSchema = Schema({
         required: true
     }, 
     rating: {
-        type: Number
+        type: Array
     }
 })
 
@@ -49,13 +49,6 @@ app.get("/all", (req, res) => {
         res.json(food)
     })
 })
-
-app.get("/dining-halls", (req, res) => {
-    // should return all the dining halls in existence
-    FOOD.find().then((food) => {
-        res.json(foodSchema)
-    })
-});
 
 app.get("/dining-hall-menu", (req, res) => { // works as intended (so far doesn't confuse with other menus)
     
@@ -73,7 +66,7 @@ app.get("/dining-hall-menu-time", (req, res) => { // works as intended (so far d
     FOOD.find({ diningHall: req.body.diningHall, time: req.body.time}).then((food) => {
         var foods = []
         for (let i = 0; i < food.length; i++) {
-            foods.push(food[i].foodItem);
+            foods.push([food[i].category, food[i].foodItem]);
         }
         res.json(foods)
     })
@@ -101,7 +94,7 @@ app.post("/add", (req, res) => {
     // should allow for adding of food options to dining halls (must be specified)
 })
 
-app.post("/add/with-rating", (req, res) => {
+app.post("/add/with-rating", (req, res) => { // unnecessary
     const food = new FOOD({
         diningHall: req.body.diningHall,
         category: req.body.category,
