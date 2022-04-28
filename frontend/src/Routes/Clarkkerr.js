@@ -3,10 +3,10 @@ import React from 'react';
 import MenuItem from '../Components/MenuItem';
 import '../Routes/Menu.css';
 
-export default function Menu() {
+export default function Clarkkerr() {
     return (
         <div>
-            <h1>Dining hall yay :D</h1>
+            <h1 className='header1'>Clark Kerr</h1>
         <Box>
           <Flex className='Menu'>
             <Box className='Food' marginBottom={3} margin={1}>

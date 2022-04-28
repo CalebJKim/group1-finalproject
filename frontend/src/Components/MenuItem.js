@@ -10,6 +10,12 @@ import {
 
 
 export default function MenuItem(){
+  function randomNum() {
+    return (
+      (Math.random() * 10).toFixed(2)
+    )
+  };
+  const random = randomNum();
   return (
     <Flex
       p={50}
@@ -33,17 +39,17 @@ export default function MenuItem(){
         />
 
         <Box py={5} textAlign="center">
-          <Link
+          <h1 className="header1"
             display="block"
             fontSize="2xl"
             fontWeight="bold"
           >
             Rose Pasta
-          </Link>
+          </h1>
           <chakra.span
             fontSize="sm"
           >
-            9.7 / 10
+            {random} / 10
           </chakra.span>
         </Box>
       </Box>
