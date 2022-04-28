@@ -21,16 +21,26 @@ body {
     font-size: 60px;
 }
 
+.wholepage {
+    display: flex;
+    padding: 100px;
+    flex-direction: column;
+}
+
+
 .captionback {
-    background-color: rgb(246, 178, 43);
-    backdrop-filter: opacity(20%);
+    background-color: rgb(205, 176, 117);
+    backdrop-filter: opacity(70%);
+    display: flex;
+    align-items: center;
     border-radius: 5px;
-    height: 40px;
-    padding: 10px;
+    height: fit-content;
+    padding: 5px;
+    border: 6=3px solid #003262;
 }
 
 .cardcaption {
-    font-size: 30px;
+    font-size: 20px;
     color: #edf8e2;
     font-weight: bold;
 }
@@ -59,11 +69,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 180px;
-    height: 180px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 
 .card2{
@@ -71,11 +81,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 180px;
-    height: 180px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
     
 .card3 {
@@ -83,11 +93,11 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 180px;
-    height: 180px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 
 .card4 {
@@ -95,10 +105,10 @@ body {
     background-size: cover;
     display: flex;
     justify-content: start;
-    width: 180px;
-    height: 180px;
+    width: 15%;
+    height: 150px;
     border-radius: 20px;
     padding: 20px;
-    border: 6px solid #FDB515;
+    border: 6px solid white;
     }
 

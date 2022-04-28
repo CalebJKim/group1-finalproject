@@ -2,7 +2,7 @@ import './Home.css';
 
 function Home() {
     return (
-        <div>
+        <div className = "wholepage">
             <div className="container">
                 <div className="header">Welcome to Cal Dining!</div>
                 <div className="subheader">Where will you eat today?</div>
