@@ -8,7 +8,7 @@ function User() {
 
     return (
         <div className="container">
-            <div className="header">Cal Dining</div>
+            <div className="header">Dining Pals</div>
             <input type="email" placeholder="Email" onChange={(event) => {setLoginEmail(event.target.value)}} />
             <input type="password" placeholder="Password" onChange={(event) => {setLoginPassword(event.target.value)}} />
             <button>

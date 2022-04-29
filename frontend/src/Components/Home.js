@@ -5,7 +5,7 @@ function Home() {
     return (
         <div className = "wholepage">
             <div className="container">
-                <div className="header">Welcome to Cal Dining!</div>
+                <div className="header">Welcome to Dining Pals!</div>
                 <div className="subheader">Where will you eat today?</div>
             </div>
             <div className = "diningcards">
